@@ -1,0 +1,454 @@
+body{
+    background-color: #12100E;
+}
+
+main{
+    background-color: #F4FAFF;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 3vh;
+    padding-bottom: 3vh;
+}
+
+h1{
+    font-family: 'Staatliches', cursive;
+    font-size: 4em;
+}
+
+h2{
+    font-family: 'Staatliches', cursive;
+    font-size: 2.5em;
+}
+
+h3{
+    font-family: 'Staatliches', cursive;
+    font-size: 2em;
+}
+
+p, ul{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+}
+
+p.greeting{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+}
+
+/* grid css for header information */
+#grid-introduction{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "intro picture navbar"
+                        "intro picture box";
+    margin: 2vw;
+    align-items: center;
+    padding-top: 2vw;
+}
+
+div.intro, div.image
+{
+    height: 80vh;
+}
+
+div.nav, div.box{
+    height: 30vh;
+}
+
+div.intro{
+    grid-area: intro;
+    background-color: #2B2D42;
+    color: #F4FAFF;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p.intro_pitch {
+    font-size: 1.2em;
+    line-height: 150%;
+}
+
+div.image{
+    grid-area: picture;
+}
+
+img.me_image{
+    display: block;
+    max-width: 80%;
+    margin: auto;
+}
+
+div.nav{
+    grid-area: navbar;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "email"
+                        "git"
+                        "linkedin";    
+    align-items: center;
+}
+
+div.email{
+    grid-area: email;
+}
+
+div.git{
+    grid-area: git;
+}
+
+div.linkedin{
+    grid-area: linkedin;
+}
+
+div.email, div.git, div.linkedin{
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5em;
+    align-content: center;
+    justify-content: center;
+    height: 7vh;
+}
+
+div.email a:link, div.git a:link, div.linkedin a:link{
+    max-width: 100%;
+    background-color: #2B2D42;
+    text-decoration: none;
+    color: #F4FAFF;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+div.email a:visited, div.git a:visited, div.linkedin a:visited{
+    max-width: 100%;
+    background-color: #2B2D42;
+    text-decoration: none;
+    color: #F4FAFF;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+div.email a:hover, div.git a:hover, div.linkedin a:hover{
+    max-width: 100%;
+    background-color: #8D99AE;
+    text-decoration: underline;
+    color: #12100E;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+div.email a:active, div.git a:active, div.linkedin a:active{
+    max-width: 100%;
+    background-color: #8D99AE;
+    text-decoration: underline;
+    color: #12100E;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+div.box{
+    grid-area: box;
+    background-color: #2B2D42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+div.skillsLink, div.projectsLink{
+    background-color: #F4FAFF;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5em;
+    width: 13vw;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div.projectsLink a:link, div.skillsLink a:link{
+    background-color: #F4FAFF;
+    color: #2B2D42;
+    text-decoration: none;
+}
+
+div.projectsLink a:visited, div.skillsLink a:visited{
+    background-color: #F4FAFF;
+    color: #2B2D42;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+div.projectsLink a:hover, div.skillsLink a:hover{
+    background-color: #F4FAFF;
+    color: #2B2D42;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+hr.color_block{
+    max-width: 80vw;
+    height: 4vh;
+    background-color: #2B2D42;
+}
+
+hr{
+    max-width: 70vw;
+    height: 1vh;
+    background-color: #2B2D42;
+}
+
+#skills{
+    max-width: 80vw;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 7vh;
+}
+
+#projects{
+    max-width: 80vw;
+    margin: auto;
+    text-align: center;
+}
+
+/* grid css for project information */
+div.projects-grid{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "GLV sim"
+                        "shmup soulbinder";
+
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+
+    color: #F4FAFF;
+}
+
+div.proj{
+    padding: 1em;
+    padding-bottom: 20px;
+    background-color: #2B2D42;
+}
+
+div.projects-grid img{
+    max-width: 80%;
+}
+
+div.proj.proj-GLV{
+    grid-area: GLV;
+}
+
+ul.proj_description{
+    text-align: left;
+}
+
+div.proj.sim{
+    grid-area: sim;
+}
+
+div.proj.shmup{
+    grid-area: shmup;
+}
+
+div.proj.proj-soulbinder{
+    grid-area: soulbinder;
+}
+
+a.infoLink:link{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    color: #F4FAFF;
+}
+
+a.infoLink:visited{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    color: #F4FAFF;
+}
+
+a.infoLink:hover{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    color: #F4FAFF;
+}
+
+a.infoLink:active{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    color: #F4FAFF;
+}
+
+#website{
+    background-color: #2B2D42;
+    color: #F4FAFF;
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+div.portfolio_text{
+    width: 200%;
+    padding: 20px;
+}
+
+div.portfolio_image img{
+    display: block;
+    width: 91%;
+    margin: auto;
+}
+
+/* adjust layout slightly for a medium-sized screen */
+@media screen and (max-width: 1200px)
+{
+    #grid-introduction{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: .5fr .5fr;
+        grid-template-areas: "intro me_pic"
+                            "contact nav";
+    }
+
+    div.intro{
+        grid-area: intro;
+        margin-bottom: 1vh;
+    }
+
+    div.image{
+        grid-area: me_pic;
+    }
+
+    img.me_image{
+        width: 100%;
+        margin-top: 10vh;
+    }
+
+    div.nav{
+        grid-area: contact;
+
+        margin-right: 3vw;
+    }
+
+    div.box{
+        grid-area: nav;
+        margin-top: 1vh;
+    }
+
+    div.skillsLink, div.projectsLink{
+        width: 24vw;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    /* mobile screen for header section */
+    #grid-introduction{
+        display: grid;
+        grid-template-areas: "intro intro intro"
+                            "me_pic me_pic contact"
+                            "nav nav nav";
+    }
+    
+    div.intro{
+        grid-area: intro;
+        margin-bottom: 1vh;
+    }
+
+    div.image{
+        grid-area: me_pic;
+    }
+
+    img.me_image{
+        width: 100%;
+        margin-top: 0vh;
+    }
+
+    div.nav{
+        grid-area: contact;
+    }
+
+    div.box{
+        grid-area: nav;
+        margin-top: 1vh;
+    }
+
+    div.skillsLink, div.projectsLink{
+        width: 35vw;
+    }
+
+    /* mobile screen for projects section */
+
+    div.projects-grid{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    
+        display: grid;
+        gap: 2vw;
+
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "GLV"
+                            "sim"
+                            "shmup"
+                            "soulbinder";
+    
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+    }
+
+    #website{
+        background-color: #2B2D42;
+        color: #F4FAFF;
+        display: flex;
+        flex-direction: column;
+        
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    div.portfolio_text{
+        padding: 20px;
+        width: 90%;
+    }
+
+}
+
+
+

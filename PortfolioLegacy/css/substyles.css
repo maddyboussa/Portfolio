@@ -1,0 +1,225 @@
+body{
+    background-color: #12100E;
+}
+
+main{
+    background-color: #F4FAFF;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 3vh;
+    padding-bottom: 3vh;
+}
+
+header{
+    background-color: #2B2D42;
+    text-align: center;
+}
+
+hr{
+    max-width: 80vw;
+    height: 0.7vh;
+    background-color: #2B2D42;
+}
+
+h1{
+    font-family: 'Staatliches', cursive;
+    font-size: 4em;
+    color: #F4FAFF;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+}
+
+figcaption{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9em;
+}
+
+div.link{
+    background-color: #2B2D42;
+    width: 25%;
+    padding: 1vh;
+    font-size: 1.1em;
+}
+
+div.back{
+    background-color: #2B2D42;
+    width: 20%;
+    padding: 1vh;
+}
+
+#description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin: 3vw;
+}
+
+img.intro_img{
+    margin-top: 5vh;
+    width: 85%;
+}
+
+img.aqualevel{
+    width: 45%;
+    border: 2px solid #12100E;
+}
+
+#details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 6vh;
+    margin: 3vw;
+}
+
+div.ld1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    gap: 2vw;
+}
+
+div.ld2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    gap: 2vw;
+}
+
+img.mspaint{
+    width: 30%;
+    border: 2px solid #12100E;
+}
+
+img.unityGB{
+    width: 35%;
+    border: 2px solid #12100E;
+}
+
+div.ld3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    gap: 2vw;
+}
+
+img.doc1{
+    width: 30%;
+    border: 2px solid #12100E;
+}
+
+img.doc2{
+    width: 30%;
+    border: 2px solid #12100E;
+}
+
+div.ld4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    gap: 2vw;
+}
+
+img.tilemap{
+    width: 50%;
+    border: 2px solid #12100E;
+}
+
+div.back{
+    text-align: center;
+    margin: auto;
+}
+
+a:link{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    color: #F4FAFF;
+}
+
+a:visited{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    color: #F4FAFF;
+}
+
+a:hover{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    color: #F4FAFF;
+}
+
+a:active{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    color: #F4FAFF;
+}
+
+/* mobile screen size adjusts grid layouts slightly */
+@media screen and (max-width: 800px)
+{
+    img.aqualevel{
+        width: 80%;
+    }
+
+    div.ld1{
+        flex-direction: column;
+    }
+
+    div.ld2{
+        display: grid;
+        grid-template-areas: "pic1 pic2"
+                            "txt txt";
+    }
+
+    img.mspaint{
+        grid-area: pic1;
+        width: 75%;
+    }
+
+    img.unityGB{
+        grid-area: pic2;
+        width: 100%;
+    }
+
+    p.ld2_text{
+        grid-area: txt;
+    }
+
+    div.ld3{
+        display: grid;
+        grid-template-areas: "pic1 pic2"
+                            "txt txt";
+    }
+
+    img.doc1{
+        grid-area: pic1;
+        width: 90%;
+    }
+
+    img.doc2{
+        grid-area: pic2;
+        width: 80%;
+    }
+
+    p.ld3_text{
+        grid-area: txt;
+    }
+
+    div.ld4{
+        flex-direction: column;
+    }
+}
