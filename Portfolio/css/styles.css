@@ -1,0 +1,161 @@
+/*Outlines universal styling for the page*/
+
+body{
+    background-color: #FFFFFF;
+    font-family: 'Rubik', sans-serif;
+}
+
+hr{
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    font-style: italic;
+}
+
+/*Navbar styling*/
+
+div.navbar{
+    
+
+    background-color: rgb(107, 107, 120, .7);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.name{
+    flex-grow: 5;
+
+    margin-left: 3vw;
+}
+
+div.name h1{
+    color: #000000;
+}
+
+div.navbutton{
+    flex-grow: 1;
+}
+
+/*Intro styling*/
+
+div.intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+
+    
+}
+
+div.title h2{
+    font-weight: bold;
+    color: #000000;
+}
+
+/*Info styling*/
+
+div.info_grid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vw;
+
+}
+
+div.info_grid h3{
+    text-align: left;
+}
+
+div.about_me{
+    flex-grow: 3;
+    margin-left: 3vw; 
+    width: 800px;
+    text-align: center;
+}
+
+div.about_me p{
+    font-size: 1.2em;
+    text-align: left;
+}
+
+div.skills{
+    flex-grow: 1;
+    text-align: center;
+}
+
+div.skills p{
+    text-align: left;
+}
+
+/*Projects styling*/
+
+/*Highlighted project*/
+
+div.highlight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Projects grid*/
+
+div.projects_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "sim shmup"
+                        "soulbinder website";
+    gap: 2vw;
+
+}
+
+ul{
+    text-align: left;
+}
+
+div.proj{
+    text-align: center;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+div.proj.sim{
+    grid-area: sim;
+}
+
+div.proj.shmup{
+    grid-area: shmup;
+}
+
+div.proj.soulbinder{
+    grid-area: soulbinder;
+}
+
+div.proj.site{
+    grid-area: website;
+}
+
+/*Contact styling*/
+
+div.contact_grid{
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+/*medium screen*/
+
+/*small screen*/
