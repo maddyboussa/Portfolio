@@ -8,6 +8,7 @@ body{
 hr{
     margin-top: 2vh;
     margin-bottom: 5vh;
+    border: 1px solid black;
 }
 
 h2{
@@ -21,12 +22,14 @@ h3{
 /*Navbar styling*/
 
 div.navbar{
-    
-
-    background-color: rgb(107, 107, 120, .7);
+    background-color: #6B6B78;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+header{
+    position: sticky; top: 0;
 }
 
 div.name{
@@ -39,8 +42,20 @@ div.name h1{
     color: #000000;
 }
 
-div.navbutton{
-    flex-grow: 1;
+a:link.navbutton, a:visited.navbutton{
+    background-color: #6B6B78;
+    color: black;
+    padding: 30px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 2vw;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+a:hover.navbutton, a:active.navbutton{
+    background-color: #818191;
 }
 
 /*Intro styling*/
