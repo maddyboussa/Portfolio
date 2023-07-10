@@ -16,249 +16,268 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-    <main>
-        <header id="navbar">
-            <!--here is nav bar that will stick to top of screen-->
+<body id="main">
+    <header id="navbar">
+        <!--here is nav bar that will stick to top of screen-->
 
-            <div class="navbar">
-                <div class="name">
-                    <h1 class="name">MADELINE BOUSSA</h1>
-                </div>
-                
+        <div class="navbar">
+            <div class="name">
+                <a href="#main" class="home_link"><h1 class="name">MADELINE BOUSSA</h1></a>
+            </div>
+
+            <div class="nav_wrapper">
                 <div>
                     <!--link to projects-->
-                    <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Twilight_Princess" class="navbutton">Projects</a>
+                    <a href="#projects" class="navbutton">Projects</a>
                 </div>
-
+    
                 <div>
                     <div>
-                        <!--link to projects-->
-                        <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Twilight_Princess" class="navbutton">Contact</a>
+                        <a href="#contact" class="navbutton">Contact</a>
                     </div>
                     <!--link to contact info-->
                 </div>
-
+    
                 <div>
                     <div>
-                        <!--link to projects-->
+                        <!--link to resume-->
                         <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Twilight_Princess" class="navbutton">Resume</a>
                     </div>
-                    <!--link to resume-->
                 </div>
             </div>
+        </div>
 
-        </header>
+    </header>
 
-        <section id="intro">
-            <!--introductory block that has title text and picture--> 
-            <div class="intro">
-                <div class="title">
-                    <h2>Game Designer</h2>
-                    <h2>title tbd</h2>
-                </div>
-    
-                <div class="intro_pic">
-                    <img src="/media/placeholder.jpg" alt="Portrait of Madeline Boussa" class="me_image">
-                </div>
+    <section id="intro">
+        <!--introductory block that has title text and picture--> 
+        <div class="intro">
+            <div class="title">
+                <h2>Game Designer</h2>
+                <h2>title tbd</h2>
             </div>
 
-        </section>
-
-        <hr>
-
-        <section id="info">
-            <!--about me and skills listed here-->
-
-            <div class="info_grid">
-                <div class="about_me">
-                    <h3>About Me</h3>
-                    <p>
-                        I am a current second year Game Design and Development student at Rochester Institute of Technology from Albany, NY! 
-                        I have a passion for viewing artistic analysis and literature/storytelling through the lens of games 
-                        and interactive media. I am currently seeking game development and software development co-ops that utilize strong programming skills in C++ and C#,  
-                        as well as Unreal Engine and Unity, to gain experience working on front-end development.
-                    </p>
-
-                </div>
-
-                <div class="skills">
-                    <h3>Skills</h3>
-                    <p><b>Programming Languages:</b> C, C++, C#, Java, Python, HTML, CSS
-                    <br>
-                    <br><b>Software Tools:</b> Visual Studio, Unity, Unreal Engine, Adobe Photoshop, Adobe Illustrator, Maya
-                    <br>
-                    <br><b>Collaboration Tools:</b> GitHub, Trello
-                    </p>
-                </div>
+            <div class="intro_pic">
+                <img src="/media/me.jpg" alt="Portrait of Madeline Boussa" class="me_image">
             </div>
+        </div>
 
-        </section>
+    </section>
 
-        <hr>
+    <hr>
 
-        <section id="projects">
-            <!--here is where projects will be displayed-->
+    <section id="info">
+        <!--about me and skills listed here-->
 
-            <div class="highlight">
-
-                <h2>Highlighted Project</h2>
-                <h3>Good Luck Valley</h3>
-
-                <!--this is a larger project that should be highlighted-->
-                <div class ="image_block">
-                    <!--glv image-->
-                    <img src="/media/placeholder.jpg" alt="" class="">
-                    <!--mousing over image will have a slight zoom and link to subsequent page-->
-                </div>
-                
+        <div class="info_grid">
+            <div class="about_me">
+                <h3>About Me</h3>
                 <p>
-                    Personal Team Project
+                    I am a current second year Game Design and Development student at Rochester Institute of Technology from Albany, NY! 
+                    I have a passion for viewing artistic analysis and literature/storytelling through the lens of games 
+                    and interactive media. I am currently seeking game development and software development co-ops that utilize strong programming skills in C++ and C#,  
+                    as well as Unreal Engine and Unity, to gain experience working on front-end development.
+                </p>
+            </div>
+
+            <div class="skills">
+                <h3>Skills</h3>
+                <p><b>Programming Languages:</b> C, C++, C#, Java, Python, HTML, CSS
+                <br>
+                <br><b>Software Tools:</b> Visual Studio, Unity, Unreal Engine, Adobe Photoshop, Adobe Illustrator, Maya
+                <br>
+                <br><b>Collaboration Tools:</b> GitHub, Trello
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <section id="projects">
+        <!--here is where projects will be displayed-->
+
+        <div class="highlight">
+
+            <h2>Highlighted Project</h2>
+            <h3>Good Luck Valley</h3>
+
+            <!--this is a larger project that should be highlighted-->
+            <!--glv image-->
+            <!--mousing over image will have a slight zoom and link to subsequent page-->
+            <div class ="image_wrapper">
+                <a style="text-decoration: none; font-size: 2em; color: black; font-weight: bold; font-style: italic;"
+
+                href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Twilight_Princess" class="image_link">
+                    <img src="/media/zelda.png" alt="" class="zelda">
+                    <div class="image_text">View Project</div>
+                </a>
+            </div>
+
+            <!--putting here for now-->
+            
+            
+            <p>
+                Personal Team Project
+                <br>
+                <br> Achievements
+                <ul class="proj_description">
+                    <li>Collaborated with a group of 6 to develop a 2D puzzle platformer in Unity</li>
+                    <li>Lead level design process to implement platforming puzzles, and create iterations of fully mapped out levels within Unity</li>
+                    <li>Assisted with the programming and development of player movement, collisions, and gameplay mechanics utilizing C# and Visual Studio</li>
+                    <li>Managed a 10-week production schedules and development deadlines utilizing Trello</li>
+                </ul>
+            </p>
+
+            <!--mousing over whole card should link to the more info page-->
+
+        </div>
+
+        <hr>
+
+        <h2 class="more_works">More Works</h2>
+
+        <div class="projects_grid">
+            <!--container that will hold smaller, individual project cards-->
+
+            <!--more info pages for these projecs should include: -->
+            <!--link to github repo -->
+            <!--video or link to playable build -->
+            <!--additional info on project and what was accomplished -->
+
+            <div class="proj sim">
+                <!--mousing over whole card should link to the more info page-->
+                <h3>Garden Sim</h3>
+                <div class ="image_wrapper">
+                    <a style="text-decoration: none; font-size: 1.5em; color: black; font-weight: bold; font-style: italic;"
+    
+                    href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Twilight_Princess" class="image_link">
+                        <img src="/media/zelda.png" alt="" class="zelda">
+                        <div class="image_text">View Project</div>
+                    </a>
+                </div>
+                <p>
+                    <b>Acamdeic Project</b>
+                    <br><b>November 2022</b>
                     <br>
                     <br> Achievements
                     <ul class="proj_description">
-                        <li>Collaborated with a group of 6 to develop a 2D puzzle platformer in Unity</li>
-                        <li>Lead level design process to implement platforming puzzles, and create iterations of fully mapped out levels within Unity</li>
-                        <li>Assisted with the programming and development of player movement, collisions, and gameplay mechanics utilizing C# and Visual Studio</li>
-                        <li>Managed a 10-week production schedules and development deadlines utilizing Trello</li>
+                        <li>Developed a top-view, player-controlled garden simulation Unity</li>
+                        <li>Implemented player movement and input, behavior of autonomous agents, agent spawning, and collisions</li>
+                        <li>Created original, vector art assets using Adobe Illustrator</li>
+                    </ul>
+                </p>
+                
+            </div>
+
+            <div class="proj shmup">
+                <h3>Aliens Visiting Earth</h3>
+                <div class ="image_wrapper">
+                    <a style="text-decoration: none; font-size: 1.5em; color: black; font-weight: bold; font-style: italic;"
+    
+                    href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Twilight_Princess" class="image_link">
+                        <img src="/media/zelda.png" alt="" class="zelda">
+                        <div class="image_text">View Project</div>
+                    </a>
+                </div>
+                <p>
+                    <b>Acamdeic Project</b>
+                    <br><b>October 2022</b>
+                    <br>
+                    <br> Achievements
+                    <ul class="proj_description">
+                        <li>Independently developed a 2D, side-scrolling, arcade style shoot-em-up in Unity</li>
+                        <li>Developed code architecture utilizing C# and Visual Studio</li>
+                        <li>Implemented player movement and firing, enemy spawning and behavior, game loop, and scoring system</li>
                     </ul>
                 </p>
 
-                <!--mousing over whole card should link to the more info page-->
+            </div>
+
+            <div class="proj soulbinder">
+                <h3>Soulbinder</h3>
+                <div class ="image_wrapper">
+                    <a style="text-decoration: none; font-size: 1.5em; color: black; font-weight: bold; font-style: italic;"
+    
+                    href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Twilight_Princess" class="image_link">
+                        <img src="/media/zelda.png" alt="" class="zelda">
+                        <div class="image_text">View Project</div>
+                    </a>
+                </div>
+                <p>
+                    <b>Academic Project</b>
+                    <br><b>May 2022</b>
+                    <br>
+                    <br> Achievements
+                    <ul class="proj_description">
+                        <li>Collaborated with a team of 4 to develop a prototype of side-scrolling, metroidvania boss rush game</li>
+                        <li>Lead development of player attacks and spellcasting, architecting a Spell class and various spell casting states</li>
+                        <li>Utilized the MonoGame framework in C#</li>
+                    </ul>
+                </p>
 
             </div>
 
-            <hr>
-
-            <h2 class="more_works">More Works</h2>
-
-            <div class="projects_grid">
-                <!--container that will hold smaller, individual project cards-->
-
-                <!--more info pages for these projecs should include: -->
-                <!--link to github repo -->
-                <!--video or link to playable build -->
-                <!--additional info on project and what was accomplished -->
-
-                <div class="proj sim">
-                    <!--mousing over whole card should link to the more info page-->
-                    <h3>Garden Sim</h3>
-                    <div class ="image_block">
-                        <!--image-->
-                        <img src="/media/placeholder.jpg" alt="" class="">
-                        <!--mousing over image will have a slight zoom and link to subsequent page-->
-                    </div>
-                    <p>
-                        <b>Acamdeic Project</b>
-                        <br><b>November 2022</b>
-                        <br>
-                        <br> Achievements
+            <div class="proj site">
+                <h3>Portfolio Website</h3>
+                <div class ="image_wrapper">
+                    <a style="text-decoration: none; font-size: 1.5em; color: black; font-weight: bold; font-style: italic;"
+    
+                    href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Twilight_Princess" class="image_link">
+                        <img src="/media/zelda.png" alt="" class="zelda">
+                        <div class="image_text">View Project</div>
+                    </a>
+                </div>
+                <p>
+                    <b>Personal Project</b>
+                    <br><b>October 2022 - Present</b>
+                    <br>
+                    <br> Achievements
                         <ul class="proj_description">
-                            <li>Developed a top-view, player-controlled garden simulation Unity</li>
-                            <li>Implemented player movement and input, behavior of autonomous agents, agent spawning, and collisions</li>
-                            <li>Created original, vector art assets using Adobe Illustrator</li>
+                            <li>Developed code and design for original portfolio website</li>
+                            <li>Wrote semantic HTML outlining site information and functionality</li>
+                            <li>Created an external style sheet using CSS to provide aesthetically pleasing styling of the website and ensure user navigation</li>
                         </ul>
-                    </p>
-                    
-                </div>
-
-                <div class="proj shmup">
-                    <h3>Aliens Visiting Earth</h3>
-                    <div class ="image_block">
-                        <!--image-->
-                        <img src="/media/placeholder.jpg" alt="" class="">
-                        <!--mousing over image will have a slight zoom and link to subsequent page-->
-                    </div>
-                    <p>
-                        <b>Acamdeic Project</b>
-                        <br><b>October 2022</b>
-                        <br>
-                        <br> Achievements
-                        <ul class="proj_description">
-                            <li>Independently developed a 2D, side-scrolling, arcade style shoot-em-up in Unity</li>
-                            <li>Developed code architecture utilizing C# and Visual Studio</li>
-                            <li>Implemented player movement and firing, enemy spawning and behavior, game loop, and scoring system</li>
-                        </ul>
-                    </p>
-
-                </div>
-
-                <div class="proj soulbinder">
-                    <h3>Soulbinder</h3>
-                    <div class ="image_block">
-                        <!--image-->
-                        <img src="/media/placeholder.jpg" alt="" class="">
-                        <!--mousing over image will have a slight zoom and link to subsequent page-->
-                    </div>
-                    <p>
-                        <b>Academic Project</b>
-                        <br><b>May 2022</b>
-                        <br>
-                        <br> Achievements
-                        <ul class="proj_description">
-                            <li>Collaborated with a team of 4 to develop a prototype of side-scrolling, metroidvania boss rush game</li>
-                            <li>Lead development of player attacks and spellcasting, architecting a Spell class and various spell casting states</li>
-                            <li>Utilized the MonoGame framework in C#</li>
-                        </ul>
-                    </p>
-
-                </div>
-
-                <div class="proj site">
-                    <h3>Portfolio Website</h3>
-                    <div class ="image_block">
-                        <!--image-->
-                        <img src="/media/placeholder.jpg" alt="" class="">
-                        <!--mousing over image will have a slight zoom and link to subsequent page-->
-                    </div>
-                    <p>
-                        <b>Personal Project</b>
-                        <br><b>October 2022 - Present</b>
-                        <br>
-                        <br> Achievements
-                            <ul class="proj_description">
-                                <li>Developed code and design for original portfolio website</li>
-                                <li>Wrote semantic HTML outlining site information and functionality</li>
-                                <li>Created an external style sheet using CSS to provide aesthetically pleasing styling of the website and ensure user navigation</li>
-                            </ul>
-                    </p>
-
-                </div>
+                </p>
 
             </div>
 
-        </section>
+        </div>
 
-        <hr>
+    </section>
 
-        <section id="contact">
-            <!--displays links to relevant social media and contacts-->
+    <section id="contact">
+        <!--displays links to relevant social media and contacts-->
 
-            <h2>Contact Me</h2>
+        <h2>Contact Me</h2>
 
-            <div class="contact_grid">
-                <div class="email">
-                    <a href = "mailto: mnb7937@rit.edu">mnb7937@rit.edu</a>
-                </div>
-                <div class="git">
-                    <a href="https://github.com/maddyboussa" target="_blank">Github</a>
-                </div>
-                <div class="linkedin">
-                    <a href="https://www.linkedin.com/in/madeline-boussa-3a011321b/" target="_blank">LinkedIn</a>
-                </div>
-
-                <div class="resume">
-                    <!--link to downloadable resume or external pdf view of resume?-->
-                    <p>Resume</p>
-                </div>
+        <div class="contact_grid">
+            <div class="email">
+                <a href = "mailto: mnb7937@rit.edu" class="contact_link"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;mnb7937@rit.edu</a>
+            </div>
+            <div class="git">
+                <a href="https://github.com/maddyboussa" target="_blank" class="contact_link"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;Github</a>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/madeline-boussa-3a011321b/" target="_blank" class="contact_link"><i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;LinkedIn</a>
             </div>
 
-        </section>
+            <div class="resume">
+                <!--link to downloadable resume or external pdf view of resume?-->
+                <a href="" target="_blank" class="contact_link"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;Resume</a>
+            </div>
+        </div>
 
+        <!--zelda heart :)-->
+        <div class="heart_wrapper">
+            <img src="/media/oot_heart.png" alt="heart container from The Legend of Zelda, Ocarina of Time" class="heart">
+        </div>
 
-    </main>
+    </section>
 
 </body>
 

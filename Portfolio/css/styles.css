@@ -13,6 +13,7 @@ hr{
 
 h2{
     text-align: center;
+    margin-bottom: 6vh;
 }
 
 h3{
@@ -28,13 +29,18 @@ div.navbar{
     align-items: center;
 }
 
+div.nav_wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
 header{
     position: sticky; top: 0;
+    z-index: 5;
 }
 
 div.name{
     flex-grow: 5;
-
     margin-left: 3vw;
 }
 
@@ -58,6 +64,12 @@ a:hover.navbutton, a:active.navbutton{
     background-color: #818191;
 }
 
+a:link.home_link, a:visited.home_link{
+    text-decoration: none;
+}
+
+/*Do we need hover over effect for home link ??? */
+
 /*Intro styling*/
 
 div.intro{
@@ -65,14 +77,28 @@ div.intro{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10vw;
-
-    
+    gap: 5vw;
+    margin-top: 3vh;
 }
 
 div.title h2{
     font-weight: bold;
     color: #000000;
+}
+
+div.intro_pic{
+    text-align: center;
+    width: 500px;
+    height: 580px;
+}
+
+img.me_image{
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    height: 580px;
+
+    object-fit: cover;
 }
 
 /*Info styling*/
@@ -119,8 +145,50 @@ div.highlight{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    text-align: center;
 }
+
+/*Image text overlay*/
+
+
+div.image_wrapper{
+    position: relative;
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    transition: .5s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.zelda{
+    width: 100%;
+}
+
+.image_wrapper img{
+    transition: 1s ease;
+}
+
+.image_wrapper:hover img{
+    border-radius:15%;
+    transition: 1s ease;
+
+    opacity: 0.3;
+}
+
+.image_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.image_wrapper:hover .image_text{
+    opacity: 1;
+}
+
+
 
 /*Projects grid*/
 
@@ -142,6 +210,8 @@ div.proj{
     text-align: center;
     margin-left: 3vw;
     margin-right: 3vw;
+    justify-content: center;
+    align-items: center;
 }
 
 div.proj.sim{
@@ -162,15 +232,127 @@ div.proj.site{
 
 /*Contact styling*/
 
+#contact{
+    background-color: #6B6B78;
+    border: 2px solid #6B6B78;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-top: 5vh;
+}
+
 div.contact_grid{
     display: flex;
     flex-direction: row;
     gap: 5vw;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10vh;
+    margin-bottom: 4vh;
+}
+
+div.email, div.git, div.linkedin, div.resume{
+    background-color: #6B6B78;
+    padding: 3vh;
+}
+
+/*Link styling*/
+
+a:link.contact_link, a:visited.contact_link{
+    text-decoration: none;
+    color: black;
+}
+
+div.email:hover, div.git:hover, div.linkedin:hover, div.resume:hover{
+    background-color: #818191;
+}
+
+/*heart image styling*/
+div.heart_wrapper{
+    text-align: center;
+}
+
+img.heart{
+    width: 4%;
 }
 
 /*medium screen*/
 
-/*small screen*/
+@media screen and (max-width: 800px)
+{
+    div.info_grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.about_me{
+        max-width: 700px;
+    }
+
+    div.skills{
+        max-width: 700px;   
+    }
+
+    div.projects_grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.contact_grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.email, div.git, div.linkedin, div.resume{
+        background-color: #6B6B78;
+        padding: 1.5vh;
+    }
+
+    img.heart{
+        width: 7%;
+    }
+}
+
+@media screen and (max-width: 750px)
+{
+    div.about_me{
+        max-width: 600px;
+    }
+
+    div.skills{
+        max-width: 600px;   
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    div.navbar{
+        justify-content: space-between;
+    }
+
+    div.nav_wrapper{
+        flex-direction: column;
+        font-size: 0.8em;
+        align-items: right;
+    }
+
+    a:link.navbutton, a:visited.navbutton{
+        padding: 9px 9px;
+    }
+
+    div.name{
+        max-width: 200px;
+    }
+}
+
+/*small screen (mobile) */ 
+
+@media screen and (max-width: 650px)
+{
+    div.about_me{
+        max-width: 450px;
+    }
+
+    div.skills{
+        max-width: 450px;   
+    }
+
+}
