@@ -1,0 +1,279 @@
+/*Outlines universal styling for the page*/
+
+body{
+    background-color: black;
+    font-family: 'Overpass', sans-serif;
+    color: white;
+}
+
+hr{
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    border: 1px solid white;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 6vh;
+    color: white;
+    font-weight: bold;
+}
+
+h3{
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+}
+
+/*Navbar styling*/
+
+div.navbar{
+    background-color: #16181A;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+div.nav_wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+header{
+    position: sticky; top: 0;
+    z-index: 5;
+}
+
+div.name{
+    flex-grow: 5;
+    margin-left: 3vw;
+}
+
+div.name h1{
+    color: white;
+}
+
+a:link.navbutton, a:visited.navbutton{
+    background-color: #16181A;
+    color: white;
+    padding: 30px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 2vw;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+a:hover.navbutton, a:active.navbutton{
+    background-color: #1F2124;
+}
+
+a:link.home_link, a:visited.home_link{
+    text-decoration: none;
+}
+
+/*Main image styling*/
+
+div.glv_img_wrapper{
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.glv_img{
+    max-width: 100%;
+    height: auto;
+}
+
+div.soul_img_wrapper{
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.soul_img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*Project title Styling*/
+
+#info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+div.link{
+    background-color: #1D1F21;
+    color: white;
+    padding: 3vh;
+    font-size: 1.5em;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:link, a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+div.link:hover, div.link:active{
+    background-color: #26292B;
+    font-size: 1.7em;
+}
+
+div.description{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 5vh;
+    font-size: 1.15em;
+}
+
+
+/*Role information styling*/
+
+div.role_grid{
+    background-color: #1D1F21;
+    padding: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30vw;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+ul{
+    text-align: left;
+    font-size: 1.3em;
+}
+
+/*Details grid styling*/
+
+div.details_grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "one two"
+                        "three four";
+
+    justify-items: left;
+    align-content: space-evenly;
+    gap: 5vw;
+    font-size: 1.15em;
+    margin-bottom: 5vh;
+}
+
+div.sub_img_wrapper1{
+    grid-area: one;
+
+    max-width: 400px;
+    max-height: 300px;
+    margin-left: 5vw;
+}
+
+img.sub_img1, img.sub_img2{
+    max-width: 400px;
+    max-height: 300px;
+}
+
+div.details_text1{
+    grid-area: two;
+    margin-right: 5vw;
+}
+
+div.sub_img_wrapper2{
+    grid-area: three;
+    margin-left: 5vw;
+}
+
+div.details_text2{
+    grid-area: four;
+    margin-right: 5vw;
+}
+
+div.details_grid_small{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+
+/*Return link styling*/
+
+div.return_link{
+    text-align: center;
+    margin-top: 5vw;
+    margin-bottom: 10vh;
+    background-color: #1D1F21;
+    color: white;
+    padding: 2vh;
+    font-size: 1.1em;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.return_link:hover, div.return_link:active{
+    background-color: #26292B;
+    font-size: 1.3em;
+}
+
+/*Different screen size styling*/
+
+@media screen and (max-width: 700px)
+{
+    div.navbar{
+        justify-content: space-between;
+    }
+
+    div.nav_wrapper{
+        flex-direction: column;
+        font-size: 0.8em;
+        align-items: right;
+    }
+
+    a:link.navbutton, a:visited.navbutton{
+        padding: 9px 9px;
+    }
+
+    div.name{
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    div.details_grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    div.details_grid_small{
+        flex-direction: column;
+    }
+}
+

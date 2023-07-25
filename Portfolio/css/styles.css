@@ -1,32 +1,40 @@
 /*Outlines universal styling for the page*/
 
 body{
-    background-color: #FFFFFF;
-    font-family: 'Rubik', sans-serif;
+    background-color: black;
+    font-family: 'Overpass', sans-serif;
+    color: white;
 }
 
 hr{
     margin-top: 2vh;
     margin-bottom: 5vh;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 h2{
     text-align: center;
     margin-bottom: 6vh;
+    color: white;
+    font-weight: bold;
 }
 
 h3{
     font-style: italic;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
 }
 
 /*Navbar styling*/
 
 div.navbar{
-    background-color: #6B6B78;
+    background-color: #16181A;
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: white;
+    font-weight: bold;
 }
 
 div.nav_wrapper{
@@ -45,12 +53,12 @@ div.name{
 }
 
 div.name h1{
-    color: #000000;
+    color: white;
 }
 
 a:link.navbutton, a:visited.navbutton{
-    background-color: #6B6B78;
-    color: black;
+    background-color: #16181A;
+    color: white;
     padding: 30px 30px;
     text-align: center;
     text-decoration: none;
@@ -61,7 +69,7 @@ a:link.navbutton, a:visited.navbutton{
 }
 
 a:hover.navbutton, a:active.navbutton{
-    background-color: #818191;
+    background-color: #1F2124;
 }
 
 a:link.home_link, a:visited.home_link{
@@ -78,25 +86,26 @@ div.intro{
     align-items: center;
     justify-content: center;
     gap: 5vw;
-    margin-top: 3vh;
 }
 
 div.title h2{
     font-weight: bold;
-    color: #000000;
+    color: white;
+    font-style: italic;
+    font-size: 1.8em;
 }
 
 div.intro_pic{
     text-align: center;
-    width: 500px;
-    height: 580px;
+    width: 550px;
+    height: 600px;
 }
 
 img.me_image{
     max-width: 100%;
     height: auto;
-    width: 500px;
-    height: 580px;
+    width: 550px;
+    height: 600px;
 
     object-fit: cover;
 }
@@ -109,6 +118,9 @@ div.info_grid{
     align-items: center;
     gap: 5vw;
 
+    background-color: #1D1F21;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
 }
 
 div.info_grid h3{
@@ -146,7 +158,16 @@ div.highlight{
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: #121314;
+    padding-top: 4vw;
 }
+
+ul.highlight{
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+
 
 /*Image text overlay*/
 
@@ -166,18 +187,19 @@ img.zelda{
 }
 
 .image_wrapper img{
-    transition: 1s ease;
+    transition: .5s ease;
 }
 
 .image_wrapper:hover img{
     border-radius:15%;
-    transition: 1s ease;
+    transition: .5s ease;
 
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .image_text{
     position: absolute;
+    color: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -192,6 +214,10 @@ img.zelda{
 
 /*Projects grid*/
 
+h2.more_works{
+    margin-top: 4vw;
+}
+
 div.projects_grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -204,6 +230,7 @@ div.projects_grid{
 
 ul{
     text-align: left;
+    line-height: 1.6;
 }
 
 div.proj{
@@ -233,8 +260,8 @@ div.proj.site{
 /*Contact styling*/
 
 #contact{
-    background-color: #6B6B78;
-    border: 2px solid #6B6B78;
+    background-color: #16181A;
+    border: 2px solid #16181A;
     padding-top: 5vh;
     padding-bottom: 5vh;
     margin-top: 5vh;
@@ -250,7 +277,7 @@ div.contact_grid{
 }
 
 div.email, div.git, div.linkedin, div.resume{
-    background-color: #6B6B78;
+    background-color: #16181A;
     padding: 3vh;
 }
 
@@ -258,11 +285,11 @@ div.email, div.git, div.linkedin, div.resume{
 
 a:link.contact_link, a:visited.contact_link{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 div.email:hover, div.git:hover, div.linkedin:hover, div.resume:hover{
-    background-color: #818191;
+    background-color: #1F2124;
 }
 
 /*heart image styling*/
@@ -302,7 +329,7 @@ img.heart{
     }
 
     div.email, div.git, div.linkedin, div.resume{
-        background-color: #6B6B78;
+        background-color: #16181A;
         padding: 1.5vh;
     }
 
