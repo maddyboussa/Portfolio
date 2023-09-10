@@ -199,8 +199,8 @@ div.sub_img_wrapper1{
 }
 
 img.sub_img1, img.sub_img2{
-    max-width: 600px;
-    max-height: 500px;
+    max-width: 100%;
+    height: auto;
 }
 
 div.details_text1{
@@ -290,6 +290,17 @@ div.return_link:hover, div.return_link:active{
 {
     div.details_grid_small{
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 650px)
+{
+    div.role_grid{
+        flex-direction: column;
+    }
+
+    ul{
+        margin: 0;
     }
 }
 

@@ -371,7 +371,7 @@ img.heart{
     }
 }
 
-/*small screen (mobile) */ 
+/*small screens (mobile) */ 
 
 @media screen and (max-width: 650px)
 {
@@ -383,4 +383,15 @@ img.heart{
         max-width: 450px;   
     }
 
+}
+
+@media screen and (max-width: 450px)
+{
+    div.about_me{
+        max-width: 350px;
+    }
+
+    div.skills{
+        max-width: 350px;   
+    }
 }
