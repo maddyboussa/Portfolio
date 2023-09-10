@@ -176,7 +176,7 @@ ul.highlight{
 div.image_wrapper{
     position: relative;
     width: 50%;
-    max-width: 600px;
+    max-width: 800px;
     text-align: center;
     transition: .5s ease;
     margin-left: auto;
