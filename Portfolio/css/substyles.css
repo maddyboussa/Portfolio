@@ -160,11 +160,12 @@ div.role_grid{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15vw;
+    gap: 10vw;
     font-size: 0.9em;
     text-align: center;
     margin-top: 3vw;
     margin-bottom: 3vw;
+    padding-left: 10vw;
 }
 
 ul{
