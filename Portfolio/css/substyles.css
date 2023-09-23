@@ -284,6 +284,13 @@ div.return_link:hover, div.return_link:active{
     div.details_text1, div.details_text2{
         margin-left: 8vw;
     }
+
+    div.sub_img_wrapper1{
+    
+        max-width: 600px;
+        max-height: 600px;
+        margin-left: 5vw;
+    }
 }
 
 @media screen and (max-width: 800px)
