@@ -223,7 +223,8 @@ div.projects_grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "sim shmup"
+    grid-template-areas: "av tools"
+                        "sim shmup"
                         "soulbinder website";
     gap: 2vw;
 
@@ -240,6 +241,10 @@ div.proj{
     margin-right: 3vw;
     justify-content: center;
     align-items: center;
+}
+
+div.proj.tools{
+    grid-area: tools;
 }
 
 div.proj.sim{
