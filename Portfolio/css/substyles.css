@@ -187,7 +187,6 @@ div.details_grid{
     align-content: space-evenly;
     gap: 5vw;
     font-size: 1.15em;
-    margin-bottom: 5vh;
 }
 
 div.sub_img_wrapper1{
@@ -227,6 +226,41 @@ div.details_grid_small{
     gap: 5vw;
 }
 
+/* process images styling */
+div.process_img_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+div.process_img_wrapper_3{
+    flex: 15%;
+    max-width: 15%;
+}
+
+div.process_img_wrapper_1{
+    flex: 25%;
+    max-width: 25%;
+}
+
+div.process_img_wrapper_2{
+    flex: 25%;
+    max-width: 25%;
+}
+
+div.process_img_wrapper_4{
+    flex: 25%;
+    max-width: 25%;
+}
+
+img.p_img{
+    width: 100%;
+    height: auto;
+}
 
 /*Return link styling*/
 
@@ -290,6 +324,15 @@ div.return_link:hover, div.return_link:active{
         max-width: 600px;
         max-height: 600px;
         margin-left: 5vw;
+    }
+
+    div.process_img_div{
+        flex-direction: column;
+    }
+
+    div.process_img_wrapper_1, div.process_img_wrapper_2, div.process_img_wrapper_3, div.process_img_wrapper_4{
+        flex: 60%;
+        max-width: 60%;
     }
 }
 
