@@ -148,6 +148,8 @@ div.description{
     margin-right: 6vw;
     margin-top: 5vh;
     font-size: 1.15em;
+    display: flex;
+    flex-direction: column;
 }
 
 
