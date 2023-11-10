@@ -227,6 +227,7 @@ div.projects_grid{
                         "sim shmup"
                         "soulbinder website";
     gap: 2vw;
+    margin-bottom: 3vh;
 
 }
 
@@ -263,6 +264,55 @@ div.proj.site{
     grid-area: website;
 }
 
+/*current works styling*/
+
+#current{
+    background-color: #1D1F21;
+    margin-bottom: 0px;
+    padding-top: 4vh;
+    padding-bottom: 7vh;
+}
+
+div.current_info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 6vh;
+}
+
+div.current_text{
+    margin-left: 9vw;
+    margin-right: 9vw;
+    font-size: 1.2rem;
+}
+
+div.current_grid{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+div.current1, div.current2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4vw;
+}
+
+div.current_details{
+    text-align: center;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+img.current_img{
+    max-width: 100%;
+    height: auto;
+}
+
 /*Contact styling*/
 
 #contact{
@@ -270,7 +320,6 @@ div.proj.site{
     border: 2px solid #16181A;
     padding-top: 5vh;
     padding-bottom: 5vh;
-    margin-top: 5vh;
 }
 
 div.contact_grid{
@@ -307,7 +356,13 @@ img.heart{
     width: 4%;
 }
 
-/*medium screen*/
+/*media queries*/
+
+@media screen and (max-width: 1200px){
+    div.current1, div.current2{
+        flex-direction: column;
+    }
+}
 
 @media screen and (max-width: 800px)
 {
