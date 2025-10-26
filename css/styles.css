@@ -1,0 +1,17 @@
+section {
+    padding: 60px 0;
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: black;
+    transform: scale(1.1);
+}
+
+#footer {
+    background-color: black;
+}
+
+.foot-link:active .foot-link:hover{
+    color: red;
+}
